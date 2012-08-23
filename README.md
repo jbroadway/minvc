@@ -59,8 +59,8 @@ including external libraries. What is included are the following:
 * Front controller script with a few niceties:
   * Support for PHP's built-in server
   * Basic CLI support (`php index.php example/hello`)
-  * MINVC_ENV environment variable for loading dev/staging/prod configs
-  * Optional bootstrap.php file for additional dependency configurations
+  * `MINVC_ENV` environment variable for loading dev/staging/prod configs
+  * Optional `bootstrap.php` file for additional dependency configurations
   * GZip output compression
 * Unit tests for the core libraries (run `phpunit tests`)
 
