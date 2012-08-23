@@ -43,6 +43,7 @@ bootstrap.php            # put additional global configurations here
 composer.json            # for installing libraries via Composer
 nginx.conf               # sample Nginx configuration file
 README.md                # this readme file
+```
 
 ## What's here and what's not
 
