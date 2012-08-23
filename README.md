@@ -63,7 +63,22 @@ including external libraries. What is included are the following:
   * Optional `bootstrap.php` file for additional dependency configurations
   * GZip output compression
 * Unit tests for the core libraries (run `phpunit tests`)
+* Example app with model, view, and handler examples
+* Automatic URL mapping to app/handler names
 
 The functionality is modelled after [Elefant](http://www.elefantcms.com/)
 so that we can use it to potentially explore ways to speed up,
 clean up, and simplify its underlying framework.
+
+## URL mapping
+
+Here is how URLs are mapped to handlers:
+
+```
+/                    -> apps/example/handlers/index.php (default_handler)
+/example             -> apps/example/handlers/index.php
+/example/hello       -> apps/example/handlers/hello.php
+/example/foo         -> apps/example/handlers/index.php ($params=[foo])
+/example/hello/joe   -> apps/example/handlers/hello.php ($params=[joe])
+/nonexistent/handler -> apps/example/handlers/404.php   (404_handler)
+```
