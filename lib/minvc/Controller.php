@@ -45,7 +45,7 @@ class Controller {
 	 */
 	public function route ($uri) {
 		// Remove folder path from request
-		if (strpos ($uri, $this->app['General']['path']) === 0) {
+		if (! empty ($this->app['General']['path']) && strpos ($uri, $this->app['General']['path']) === 0) {
 			$uri = substr ($uri, strlen ($this->app['General']['path']));
 		}
 

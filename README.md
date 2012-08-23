@@ -61,6 +61,7 @@ including external libraries. What is included are the following:
   * MINVC_ENV environment variable for loading dev/staging/prod configs
   * Optional bootstrap.php file for additional dependency configurations
   * GZip output compression
+* Unit tests for the core libraries (run `phpunit tests`)
 
 The functionality is modelled after [Elefant](http://www.elefantcms.com/)
 so that we can use it to potentially explore ways to speed up,
