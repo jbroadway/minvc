@@ -31,7 +31,7 @@ config/                  # global configurations
 index.php                # the front controller script
 lib/                     # PHP libraries
     minvc/               # the core libraries
-tests\                   # PHPUnit unit tests
+tests/                   # PHPUnit unit tests
 ```
 
 In addition to these, there are a few extra files in the root
