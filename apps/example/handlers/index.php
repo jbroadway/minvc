@@ -14,4 +14,4 @@ $model = new example\MyModel;
 $some_data = $model->get_some_data ($id);
 
 // Send the results to a view
-echo $this->view->render ('apps/example/views/index.php', $some_data);
+return $this->view->render ('apps/example/views/index.php', $some_data);

@@ -112,8 +112,6 @@ class Controller {
 	public function handle ($uri) {
 		list ($file, $params) = $this->route ($uri);
 
-		ob_start ();
-		require ($file);
-		return ob_get_clean ();
+		return require ($file);
 	}
 }

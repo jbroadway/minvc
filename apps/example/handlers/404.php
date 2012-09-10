@@ -1,3 +1,7 @@
-<h1>Page Not Found</h1>
+<?php
 
-<p>We seem to have misplaced the page you were looking for.</p>
+/**
+ * Display a 404 error notice.
+ */
+
+return $this->view->render ('apps/example/views/404.php');
